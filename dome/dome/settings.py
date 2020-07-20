@@ -13,6 +13,7 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
+# 根目录
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
@@ -23,6 +24,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '(o@b9o_$7b=0lz5rd=_#wxuj76v9^tl0l*8&e=#0)=)1(e$u@g'
 
 # SECURITY WARNING: don't run with debug turned on in production!
+# 调试模式
 DEBUG = True
 
 ALLOWED_HOSTS = []
@@ -104,9 +106,11 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/2.2/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+# LANGUAGE_CODE = 'en-us' #语言：
+LANGUAGE_CODE = 'zn-us' #中文
+TIME_ZONE = 'Asia/Shanghai' #亚洲上海时区
 
-TIME_ZONE = 'UTC'
+# TIME_ZONE = 'UTC' #时区：
 
 USE_I18N = True
 
